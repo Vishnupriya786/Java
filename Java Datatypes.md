@@ -17,10 +17,10 @@ Each test case, T, is comprised of a single line with an integer, n, which can b
 
 ## Output Format
 For each input variable n and appropriate primitive datatype, you must determine if the given primitives are capable of storing it. If yes, then print:
-n can be fitted in:
-* dataType
+## n can be fitted in:
+## * dataType
 if no, print
-n can't be fitted anywhere.
+## n can't be fitted anywhere.
 
 ```
 Sample Input
