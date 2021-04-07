@@ -15,5 +15,51 @@ java
 ```
 
 ```
-https://www.hackerrank.com/challenges/java-strings-introduction/problem
+Sample Output 0
+
+9
+No
+Hello Java
+```
+
+```
+import java.util.*;
+class Solution{
+    public static void main(String arr[]){
+        Scanner input = new Scanner(System.in);
+        String Word1 = input.next();
+        String Word2 = input.next();
+        System.out.println(Word1.length()+Word2.length());
+        ArrayList lis = new ArrayList();
+        lis.add(Word1);
+        lis.add(Word2);
+        Collections.sort(lis);
+        if (lis.get(0)== Word1){
+            System.out.println("No");
+        }
+        else{
+            System.out.println("Yes");
+        }
+        String FirstLetterWord1 = Word1.substring(0, 1);
+        String RemainingLetterWord1 = Word1.substring(1, Word1.length());
+        
+        FirstLetterWord1 = FirstLetterWord1.toUpperCase();
+        System.out.print(FirstLetterWord1 + RemainingLetterWord1+" ");
+        
+        String FirstLetterWord2 = Word2.substring(0, 1);
+        String RemainingLetterWord2 = Word2.substring(1, Word2.length());
+        
+        FirstLetterWord2 = FirstLetterWord2.toUpperCase();
+        System.out.println(FirstLetterWord2 + RemainingLetterWord2);
+    }
+}
+
+```
+
+```
+OUTPUT
+
+9
+No
+Hello Java
 ```
